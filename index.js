@@ -12,14 +12,14 @@ let form = $("#login-form");
 form.submit(function(e){
     e.preventDefault();
 
-    const name = userName.value;
+    const user = userName.value;
     const password = userPassword.value;
     var mObj = {
-      username: name,
+      username: user,
       password: password,
     };
     // // Checking the Username and password provided by user to meet the required condition -----
-    if (name === password && name !== "" && password !== "") {
+    if (user === password && user !== "" && password !== "") {
         alert("Login‌ ‌Successful");
         localStorage.setItem("loginStatus", JSON.stringify(mObj));
         location.assign("./orders.html");
