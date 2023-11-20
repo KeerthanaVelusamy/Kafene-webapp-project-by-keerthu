@@ -5,8 +5,8 @@ if(loginCredentials == "false" || loginCredentials == null){
     location.assign("./orders.html");
 }
 
-var userName = document.getElementsByClassName(".loginusername");
-var userPassword = document.getElementsByClassName(".loginpassword");
+var userName = document.querySelector(".loginusername");
+var userPassword = document.querySelector(".loginpassword");
 let submitBtn = document.getElementById("submit");
 let form = $("#login-form");
 form.submit(function(e){
